@@ -14,6 +14,14 @@
  * limitations under the License.
  */
 
+variable "backend_name" {
+  type  = string
+  description = " Backend name for External load Balance"
+  default = "myehs-dev-apigw-bes-temp"
+}
+
+
+
 variable "project" {
   description = "The project to deploy to, if not set the default provider project is used."
   type        = string
