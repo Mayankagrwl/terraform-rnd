@@ -32,3 +32,4 @@ variable "cloud_run_svc" {
   description = "Cloud run service name"
   default = "myehs-dev-appui-bes" 
 }
+

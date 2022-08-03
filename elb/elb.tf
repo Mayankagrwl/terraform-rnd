@@ -2,7 +2,7 @@ module "lb-http" {
   source  = "../module/"
   name    = var.lb_name
   project = var.project_id
-
+  backend_name = var.backend_name
 
   backends = {
     default = {
