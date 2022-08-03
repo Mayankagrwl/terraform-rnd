@@ -17,7 +17,6 @@
 variable "backend_name" {
   type  = string
   description = " Backend name for External load Balance"
-  default = "myehs-dev-apigw-bes-temp"
 }
 
 
