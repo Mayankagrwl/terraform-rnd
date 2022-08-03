@@ -20,7 +20,7 @@ variable "neg_name" {
   type  = string
   description = "NEG name"
   default = "myehs-dev-apigw-neg-temp"
-
+}
 variable "backend_name" {
   type  = string
   description = " Backend name for External load Balance"

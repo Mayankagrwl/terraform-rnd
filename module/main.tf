@@ -41,7 +41,7 @@ resource "google_compute_global_forwarding_rule" "https" {
   provider   = google-beta
   project    = var.project
   count      = var.ssl ? 1 : 0
-  name       = "${var.name}-https"
+  name       = "${var.name}-forwarding-rule"
   target     = google_compute_target_https_proxy.default[0].self_link
   ip_address = local.address
   port_range = "443"
@@ -151,7 +151,7 @@ resource "google_compute_managed_ssl_certificate" "default" {
 resource "google_compute_url_map" "default" {
   project         = var.project
   count           = var.create_url_map ? 1 : 0
-  name            = "${var.name}-url-map"
+  name            = var.name
   default_service = google_compute_backend_service.default[keys(var.backends)[0]].self_link
 }
 
