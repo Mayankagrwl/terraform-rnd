@@ -24,10 +24,11 @@ variable "neg_name" {
 variable "backend_name" {
   type  = string
   description = " Backend name for External load Balance"
-  default = "myehs-dev-apigw-bes"
+  default = "myehs-dev-apigw-bes-temp"
 }
 
 variable "cloud_run_svc" {
   type = string
   description = "Cloud run service name"
   default = "myehs-dev-appui-bes" 
+}

@@ -30,7 +30,7 @@ resource "google_compute_global_forwarding_rule" "http" {
   provider   = google-beta
   project    = var.project
   count      = local.create_http_forward ? 1 : 0
-  name       = "${var.name}-forwarding-rule
+  name       = "${var.name}-forwarding-rule"
   target     = google_compute_target_http_proxy.default[0].self_link
   ip_address = local.address
   port_range = "80"
