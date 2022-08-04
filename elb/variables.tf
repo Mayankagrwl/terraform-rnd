@@ -19,12 +19,12 @@ variable "region" {
 variable "neg_name" {
   type  = string
   description = "NEG name"
-  default = "myehs-dev-apigw-neg-temp"
+  default = "myehs-dev-apiui-neg-temp"
 }
 variable "backend_name" {
   type  = string
   description = " Backend name for External load Balance"
-  default = "myehs-dev-apigw-bes-temp"
+  default = "myehs-dev-apiui-bes-temp"
 }
 
 variable "cloud_run_svc" {
@@ -32,4 +32,3 @@ variable "cloud_run_svc" {
   description = "Cloud run service name"
   default = "myehs-dev-appui-bes" 
 }
-
